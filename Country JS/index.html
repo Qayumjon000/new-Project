@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <h1 style="cursor: pointer;" class="logo"><i class="fa-solid fa-globe"></i> Countries </h1>
+      <hr style="height: 60% !important; color: rgb(53, 53, 53) !important;">
+      <span>
+        <input placeholder="Search" id="search" type="text">
+        <i class="fa-solid fa-search" id="icon"></i>
+        <i class="fa-solid fa-arrow-right"></i>
+        <select name="" id="select">
+          <option value="all">All</option>
+          <option value="Asia">Asia</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Antarctic">Antarctic</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+        <button id="mode">
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </span>
+    </div>
+    <div class="loader">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif" alt="">
+    </div>
+    <div class="cards-container">
+    </div>
+    <div class="modal">
+      <span id="delModal">
+        <i id="modalIcon" class="fa-solid fa-arrow-right"></i>
+      </span>
+      <div class="modalInfo">
+        <div class="name">
+          <div class="box">
+            <p>Flag</p>
+            <img src="${item.flags.png}" alt="">
+          </div>
+          <div class="box">
+            <p>Flag</p>
+            <img src="${item.coatOfArms.png}" alt="">
+          </div>
+        </div>
+        <div class="name-2">
+          <span>
+            <h2>Name</h2>
+            <h2>${item.name.common}</h2>
+          </span>
+          <span>
+            <h3>Official name</h3>
+            <h3>${item.official}</h3>
+          </span>
+          <span>
+            <p>Capital</p>
+            <p>${item.capital}</p>
+          </span>
+          <span>
+            <p>Population</p>
+            <p>${item.population}</p>
+          </span>
+          <span>
+            <p>Region</p>
+            <p>${item.region}</p>
+          </span>
+          <span>
+            <p>Language</p>
+            <p>${language}</p>
+          </span>
+          <span>
+            <p>CCA2</p>
+            <p>${item.cca2}</p>
+          </span>
+          <span>
+            <p>CCA3</p>
+            <p>${item.cca3}</p>
+          </span>
+          <span>
+            <p>Subregion</p>
+            <p>${item.subregion}</p>
+          </span>
+          <span>
+            <p>Currency</p>
+            <p>${item.currency.symbol}</p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
